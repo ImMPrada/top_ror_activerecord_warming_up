@@ -13,3 +13,10 @@ README
 * Rails: 7
 
 This project is with the aim of practice about the questions at [TOP - ActiveRecord lesson's quiz](https://www.theodinproject.com/lessons/ruby-on-rails-micro-reddit)
+
+
+<h3 align="left">
+branch: warming-up-01
+</h3>
+
+You are building an online learning platform (much like this!). You’ve got many different courses, each with a title and description, and each course has multiple lessons. Lesson content consists of a title and body text.
