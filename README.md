@@ -21,4 +21,4 @@ This project is with the aim of practice about the questions at [TOP - ActiveRec
 
 
 
-<img width="526" alt="image" src="https://user-images.githubusercontent.com/26731448/214150155-72825411-13cb-438d-b7cc-d6fcbb52f4ff.png">
+<img width="345" alt="image" src="https://user-images.githubusercontent.com/26731448/214150248-c44d82f0-83e5-4b66-b161-ae0e9f903ab6.png">
