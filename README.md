@@ -1,5 +1,11 @@
 # README
 
+<h4 align="center">
+:construction: Project in progress :construction:
+</h4>
+
+This project is with the aim of practice about the questions at [TOP - ActiveRecord lesson's quiz](https://www.theodinproject.com/lessons/ruby-on-rails-micro-reddit)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
