@@ -13,3 +13,12 @@ README
 * Rails: 7
 
 This project is with the aim of practice about the questions at [TOP - ActiveRecord lesson's quiz](https://www.theodinproject.com/lessons/ruby-on-rails-micro-reddit)
+
+
+
+
+
+
+
+
+<img width="526" alt="image" src="https://user-images.githubusercontent.com/26731448/214150155-72825411-13cb-438d-b7cc-d6fcbb52f4ff.png">
