@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_23_213701) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_25_191612) do
   create_table "cities", force: :cascade do |t|
     t.text "name", null: false
     t.integer "state_id", null: false
@@ -41,6 +41,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_23_213701) do
     t.integer "city_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date "birthdate"
     t.index ["city_id"], name: "index_profiles_on_city_id"
     t.index ["gender_id"], name: "index_profiles_on_gender_id"
     t.index ["user_id"], name: "index_profiles_on_user_id"
@@ -58,7 +59,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_23_213701) do
 
   create_table "users", force: :cascade do |t|
     t.text "email", null: false
-    t.date "birthdate", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email"
