@@ -57,5 +57,30 @@ run migrations
 run seeds:
 `rails db:seed`
 
+![image](https://user-images.githubusercontent.com/26731448/214681342-f99c3579-27df-472c-8831-3621700b0aa5.png)
+
 try ActiveRecord queries on console, to start console:
 `rails c`
+
+
+![image](https://user-images.githubusercontent.com/26731448/214681603-143a2a2e-3044-4bd6-9044-a67f37e400d9.png)
+
+Because of the relation 1:1 users:profiles, there should be the same ammount of users and profiles
+![image](https://user-images.githubusercontent.com/26731448/214681706-fc6a581e-1c17-491e-8ad4-94354748da15.png)
+
+If an User is destroyed, its corresponding Profile is destroyed:
+![image](https://user-images.githubusercontent.com/26731448/214684663-2a1708b3-acfe-48bf-b5fb-5975c5222289.png)
+
+If a Profile is destroyed, its corresponding User is destroyed:
+![image](https://user-images.githubusercontent.com/26731448/214685039-735e8761-c3b9-41f0-a5a9-97e6543bb829.png)
+
+state's profiles can be accesed via state.profiles, eg:
+```
+state = State.all.sample
+state.profiles
+```
+![image](https://user-images.githubusercontent.com/26731448/214683380-62ca442f-18ae-4b78-bb58-cd1635f34c40.png)
+
+
+
+
