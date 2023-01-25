@@ -31,10 +31,10 @@ Because of the relation 1:1 users:profiles, there should be the same ammount of 
 ![image](https://user-images.githubusercontent.com/26731448/214681706-fc6a581e-1c17-491e-8ad4-94354748da15.png)
 
 If an User is destroyed, its corresponding Profile is destroyed:
-![image](https://user-images.githubusercontent.com/26731448/214682116-6e0312ce-5954-49b8-8fbd-08f1b7e98132.png)
+![image](https://user-images.githubusercontent.com/26731448/214684663-2a1708b3-acfe-48bf-b5fb-5975c5222289.png)
 
 If a Profile is destroyed, its corresponding User is destroyed:
-![image](https://user-images.githubusercontent.com/26731448/214682822-347f0762-6cd6-43c9-99ee-c23b4371c6bc.png)
+![image](https://user-images.githubusercontent.com/26731448/214685039-735e8761-c3b9-41f0-a5a9-97e6543bb829.png)
 
 state's profiles can be accesed via state.profiles, eg:
 ```
