@@ -27,27 +27,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_23_213701) do
     t.index ["name"], name: "index_countries_on_name"
   end
 
-  create_table "courses", force: :cascade do |t|
-    t.text "title", null: false
-    t.text "description", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "genders", force: :cascade do |t|
     t.text "label", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["label"], name: "index_genders_on_label"
-  end
-
-  create_table "lessons", force: :cascade do |t|
-    t.text "title", null: false
-    t.text "description", null: false
-    t.integer "course_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["course_id"], name: "index_lessons_on_course_id"
   end
 
   create_table "profiles", force: :cascade do |t|
@@ -63,14 +47,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_23_213701) do
     t.index ["username"], name: "index_profiles_on_username"
   end
 
-  create_table "second_case_users", force: :cascade do |t|
-    t.text "email", null: false
-    t.date "birthdate", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["email"], name: "index_second_case_users_on_email"
-  end
-
   create_table "states", force: :cascade do |t|
     t.text "name", null: false
     t.integer "country_id", null: false
@@ -80,8 +56,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_23_213701) do
     t.index ["name"], name: "index_states_on_name"
   end
 
+  create_table "users", force: :cascade do |t|
+    t.text "email", null: false
+    t.date "birthdate", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_users_on_email"
+  end
+
   add_foreign_key "cities", "states"
-  add_foreign_key "lessons", "courses"
   add_foreign_key "profiles", "cities"
   add_foreign_key "profiles", "genders"
   add_foreign_key "profiles", "users"
