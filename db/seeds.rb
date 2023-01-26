@@ -8,4 +8,4 @@
 
 require_relative 'warming_up/first'
 
-WarmingUp::First
+WarmingUp::First.call
