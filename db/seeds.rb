@@ -9,4 +9,4 @@ require_relative 'warming_up/first'
 require_relative 'warming_up/second'
 
 WarmingUp::First.call
-WarmingUp::Second
+WarmingUp::Second.call
