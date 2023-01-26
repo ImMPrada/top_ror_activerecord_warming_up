@@ -5,7 +5,8 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-
 require_relative 'warming_up/first'
+require_relative 'warming_up/second'
 
 WarmingUp::First.call
+WarmingUp::Second.call
