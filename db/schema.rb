@@ -34,6 +34,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_25_191612) do
     t.index ["label"], name: "index_genders_on_label"
   end
 
+  create_table "lessons", force: :cascade do |t|
+    t.text "title", null: false
+    t.text "description", null: false
+    t.integer "course_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["course_id"], name: "index_lessons_on_course_id"
+  end
+
   create_table "profiles", force: :cascade do |t|
     t.text "username", null: false
     t.integer "user_id", null: false
@@ -65,6 +74,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_25_191612) do
   end
 
   add_foreign_key "cities", "states"
+  add_foreign_key "lessons", "courses"
   add_foreign_key "profiles", "cities"
   add_foreign_key "profiles", "genders"
   add_foreign_key "profiles", "users"
