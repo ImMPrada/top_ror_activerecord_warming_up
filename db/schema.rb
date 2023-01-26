@@ -27,6 +27,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_25_191612) do
     t.index ["name"], name: "index_countries_on_name"
   end
 
+  create_table "courses", force: :cascade do |t|
+    t.text "title", null: false
+    t.text "description", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "genders", force: :cascade do |t|
     t.text "label", null: false
     t.datetime "created_at", null: false
@@ -50,7 +57,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_25_191612) do
     t.integer "city_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.date "birthdate"
+    t.date "birthdate", null: false
     t.index ["city_id"], name: "index_profiles_on_city_id"
     t.index ["gender_id"], name: "index_profiles_on_gender_id"
     t.index ["user_id"], name: "index_profiles_on_user_id"
